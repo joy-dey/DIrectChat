@@ -7,7 +7,7 @@ const quickChatForm = document.querySelector('#quickChatForm'),
     clearHistoryButton = document.querySelector('#clearHistory'),
     historyItemTemplate = document.querySelector('template'),
     appInfo = 'in.joydey.directChat.appData';
-let publicApiUrl = "https://api.whatsapp.com/send?phone=",
+let publicApiUrl = "https://api.whatsapp.com/send?phone=91",
     chats = [];
 
 window.addEventListener('DOMContentLoaded', function () {
