@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DirectChat | Chat with Anyone without Saving Number</title>
+    <meta name="description" content="An useful WhatsApp utility Web Application that can help you to send messages to WhatsApp users without saving their Phone Number">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#1A161F">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<header id="header-main">
+    <nav id="navigation">
+        <a href="#" id="brand-logo">
+            <img src="assets/img/directChatLogo.svg" alt="DirectChat Logo" id="brand-image">
+        </a>
+        <div class="button-group">
+            <button id="downloadButton" onclick="download()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"/>
+                    <path d="M13 13v5.585l1.828-1.828 1.415 1.415L12 22.414l-4.243-4.242 1.415-1.415L11 18.585V13h2zM12 2a7.001 7.001 0 0 1 6.954 6.194 5.5 5.5 0 0 1-.953 10.784v-2.014a3.5 3.5 0 1 0-1.112-6.91 5 5 0 1 0-9.777 0 3.5 3.5 0 0 0-1.292 6.88l.18.03v2.014a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"/>
+                    <path d="M13 13v5.585l1.828-1.828 1.415 1.415L12 22.414l-4.243-4.242 1.415-1.415L11 18.585V13h2zM12 2a7.001 7.001 0 0 1 6.954 6.194 5.5 5.5 0 0 1-.953 10.784L18 17a6 6 0 0 0-11.996-.225L6 17v1.978a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2z"/>
+                </svg>
+            </button>
+            <button id="historyButton">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0L24 0 24 24 0 24z"/>
+                    <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10c-1.702 0-3.305-.425-4.708-1.175L2 22l1.176-5.29C2.426 15.306 2 13.703 2 12 2 6.477 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8 0 1.335.326 2.618.94 3.766l.35.654-.656 2.946 2.948-.654.653.349c1.148.614 2.43.939 3.765.939 4.418 0 8-3.582 8-8s-3.582-8-8-8zm1 3v5h4v2h-6V7h2z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0L24 0 24 24 0 24z"/>
+                    <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10c-1.702 0-3.305-.425-4.708-1.175L2 22l1.176-5.29C2.426 15.306 2 13.703 2 12 2 6.477 6.477 2 12 2zm1 5h-2v7h6v-2h-4V7z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="landing">
+        <div class="container">
+            <article>
+                <h1>Welcome to DirectChat</h1>
+                <p class="lead">An useful WhatsApp utility Web Application that can help you to send
+                    messages to WhatsApp users without saving their Phone Number</p>
+                <form id="quickChatForm" autocomplete="off">
+                    <label for="phoneNumber" aria-hidden="true">Enter Phone Number</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber"
+                           placeholder="Type in Phone Number with Country Code to Chat" maxlength="10"
+                           autocomplete="off">
+                    <button type="submit">Send Message</button>
+                </form>
+                <small id="disclaimer-notice">Disclaimer: DirectChat is using the official public API available from
+                    WhatsApp. DirectChat is not associated with WhatsApp. WhatsApp is a registered trademark of WhatsApp
+                    Inc. You should follow WhatsApp’s Terms & Conditions while sending message through DirectChat
+                    App.</small>
+            </article>
+            <aside>
+                <img src="assets/img/undraw_digital_nomad_re_w8uy.svg" alt="Digital Nomad Illustration"
+                     id="illustration">
+            </aside>
+        </div>
+    </section>
+    <section id="history">
+        <div id="no-history" class="container">
+            <figure>
+                <img src="assets/img/undraw_conversation_re_c26v.svg" alt="Conversation Illustration">
+            </figure>
+            <div id="figcaption">
+                <h2>Oops! No Previous history found</h2>
+                <p>To start a chat click on the start a chat button or if you have used DirectChat previously you can
+                    download the data from that device and import it here</p>
+                <div class="button-group">
+                    <div class="input-group">
+                        <label for="fileImport" id="importFile">Import File</label>
+                        <input type="file" name="fileImport" id="fileImport" accept=".dchat">
+                    </div>
+                    <button id="startAChat">Start a Chat</button>
+                </div>
+            </div>
+        </div>
+        <div id="recent-chats">
+            <header>
+                <h2>Recent Chats</h2>
+                <button id="clearHistory">Clear History</button>
+            </header>
+            <div class="chat-grid">
+            </div>
+        </div>
+    </section>
+</main>
+<template>
+    <div class="chat-grid">
+        <div class="chat-item">
+            <div class="icon-holder">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="27" cy="27" r="27" fill="white" fill-opacity="0.5"/>
+                    <path d="M15.7545 38.25L17.2755 32.661C16.2733 30.943 15.7467 28.989 15.75 27C15.75 20.7866 20.7866 15.75 27 15.75C33.2134 15.75 38.25 20.7866 38.25 27C38.25 33.2134 33.2134 38.25 27 38.25C25.0119 38.2532 23.0588 37.7271 21.3413 36.7256L15.7545 38.25ZM22.9399 21.7215C22.7946 21.7305 22.6526 21.7688 22.5225 21.834C22.4005 21.9031 22.2891 21.9895 22.1918 22.0905C22.0568 22.2176 21.9803 22.3279 21.8981 22.4347C21.4824 22.9759 21.2587 23.6401 21.2625 24.3225C21.2648 24.8737 21.4088 25.4104 21.6338 25.9121C22.0939 26.9269 22.851 28.0012 23.8511 28.9969C24.0919 29.2365 24.327 29.4773 24.5801 29.7011C25.8215 30.794 27.3007 31.5822 28.9001 32.0029L29.5403 32.1008C29.7484 32.112 29.9565 32.0962 30.1658 32.0861C30.4934 32.0692 30.8133 31.9805 31.1029 31.8263C31.2896 31.7273 31.3774 31.6777 31.5338 31.5787C31.5338 31.5787 31.5821 31.5472 31.6744 31.4775C31.8263 31.365 31.9196 31.2851 32.0456 31.1535C32.139 31.0568 32.22 30.9431 32.2819 30.8138C32.3696 30.6304 32.4574 30.2805 32.4934 29.9891C32.5204 29.7664 32.5125 29.6449 32.5091 29.5695C32.5046 29.4491 32.4045 29.3243 32.2954 29.2714L31.6406 28.9778C31.6406 28.9778 30.6619 28.5514 30.0645 28.2791C30.0015 28.2517 29.934 28.236 29.8654 28.233C29.7884 28.2251 29.7106 28.2338 29.6373 28.2584C29.5639 28.283 29.4967 28.3231 29.4401 28.3759V28.3736C29.4345 28.3736 29.3591 28.4378 28.5458 29.4233C28.4991 29.486 28.4348 29.5334 28.361 29.5594C28.2873 29.5855 28.2075 29.589 28.1318 29.5695C28.0585 29.5499 27.9867 29.5251 27.9169 29.4953C27.7774 29.4368 27.729 29.4143 27.6334 29.3726L27.6278 29.3704C26.9842 29.0894 26.3883 28.7098 25.8615 28.2454C25.7198 28.1216 25.5881 27.9866 25.4531 27.8561C25.0105 27.4323 24.6248 26.9528 24.3056 26.4296L24.2393 26.3227C24.1916 26.2509 24.153 26.1735 24.1245 26.0921C24.0818 25.9267 24.1931 25.794 24.1931 25.794C24.1931 25.794 24.4665 25.4947 24.5936 25.3327C24.6995 25.1981 24.7982 25.058 24.8895 24.9131C25.0223 24.6994 25.0639 24.48 24.9941 24.3101C24.6791 23.5406 24.3529 22.7745 24.0176 22.014C23.9513 21.8632 23.7544 21.7552 23.5755 21.7339C23.5148 21.7271 23.454 21.7204 23.3933 21.7159C23.2422 21.7084 23.0908 21.7099 22.9399 21.7204V21.7215Z"
+                          fill="white"/>
+                </svg>
+            </div>
+            <ul class="chat-details">
+                <li>
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 2H18C18.2652 2 18.5196 2.10536 18.7071 2.29289C18.8946 2.48043 19 2.73478 19 3V21C19 21.2652 18.8946 21.5196 18.7071 21.7071C18.5196 21.8946 18.2652 22 18 22H6C5.73478 22 5.48043 21.8946 5.29289 21.7071C5.10536 21.5196 5 21.2652 5 21V0H7V2ZM7 4V9H17V4H7Z"
+                                  fill="white"/>
+                        </svg>
+                    </div>
+                    <span><strong>+91-7628886035</strong></span>
+                </li>
+                <li>
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 11H8V13H6V11ZM11 11H13V13H11V11ZM16 11H18V13H16V11Z"
+                                  fill="white"/>
+                        </svg>
+                    </div>
+                    <span id="date">December 26, 2021</span>
+                </li>
+                <li>
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM13 12V7H11V14H17V12H13Z"
+                                  fill="white"/>
+                        </svg>
+                    </div>
+
+                    <span id="time">3:22 PM</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+</body>
+</html>

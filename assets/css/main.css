@@ -1,0 +1,267 @@
+:root {
+  --primary-green: $green;
+  --primary-violte: $violet;
+  --primary-black: $black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  hight: auto;
+}
+
+body {
+  margin: 0;
+  background-color: #1A161F;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+}
+body #header-main #navigation {
+  width: calc(100vw - 8rem);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+body #header-main #navigation #brand-image {
+  width: 10rem;
+}
+body #header-main #navigation .button-group {
+  margin-left: auto;
+}
+body #header-main #navigation button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  overflow: hidden;
+  flex-direction: column;
+}
+body #header-main #navigation button:hover, body #header-main #navigation button:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body #header-main #navigation button:hover svg:first-child, body #header-main #navigation button:active svg:first-child {
+  transform: translateY(-4rem);
+}
+body #header-main #navigation button:hover svg:last-child, body #header-main #navigation button:active svg:last-child {
+  transform: translateY(-1rem);
+}
+body #header-main #navigation button svg {
+  fill: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+body #header-main #navigation button svg:first-child {
+  transform: translateY(0.65rem);
+}
+body #header-main #navigation button svg:last-child {
+  transform: translateY(4rem);
+}
+body main {
+  margin-top: 5rem;
+}
+body main #landing {
+  height: 85vh;
+}
+body main #landing .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: calc(100vw - 8rem);
+  margin: 0 auto;
+}
+body main #landing .container article {
+  grid-column: span 2;
+}
+body main #landing .container article h1 {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  margin-bottom: 0;
+}
+body main #landing .container article .lead {
+  font-size: clamp(0.75rem, 5vw, 1.125rem);
+}
+body main #landing .container article #quickChatForm {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+}
+body main #landing .container article #quickChatForm label {
+  display: none;
+}
+body main #landing .container article #quickChatForm input {
+  padding: 1rem 1rem 1rem 1.5rem;
+  width: 50%;
+  margin-right: 0.5rem;
+  border-radius: 2rem 2rem 2rem 0;
+  border: 0;
+  font-size: 0.925rem;
+}
+body main #landing .container article #quickChatForm input:focus {
+  outline: none;
+}
+body main #landing .container article #quickChatForm button {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background-color: #5CC97B;
+  border: 0;
+  font-weight: 700;
+  border-radius: 2rem 2rem 0 2rem;
+  overflow: hidden;
+}
+body main #landing .container article small {
+  font-size: clamp(0.5rem, 5vw, 0.625rem);
+  display: block;
+  line-height: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #333333;
+}
+body main #history {
+  height: 100vh;
+  padding: 2.5rem 0;
+}
+body main #history #no-history {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: calc(100vw - 8rem);
+  margin: 0 auto;
+}
+body main #history #no-history #figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+body main #history #no-history #figcaption h3 {
+  text-align: center;
+  font-weight: normal;
+}
+body main #history #no-history #figcaption .button-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+body main #history #no-history #figcaption label, body main #history #no-history #figcaption button {
+  background-color: #F4B840;
+  padding: 1rem 1.5rem;
+  color: #1A161F;
+  font-weight: bold;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+body main #history #no-history #figcaption label {
+  border-radius: 2rem 2rem 2rem 0;
+}
+body main #history #no-history #figcaption input {
+  display: none;
+}
+body main #history #no-history #figcaption button {
+  font-size: 1rem;
+  border: none;
+  border-radius: 2rem 2rem 0 2rem;
+  background-color: #5CC97B;
+}
+body main #history #recent-chats {
+  width: calc(100vw - 8rem);
+  margin: 0 auto;
+  display: none;
+}
+body main #history #recent-chats header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main #history #recent-chats header button {
+  background-color: transparent;
+  border: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+body main #history #recent-chats header button:hover, body main #history #recent-chats header button:focus, body main #history #recent-chats header button:active {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+body main #history #recent-chats .chat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+body main #history #recent-chats .chat-grid .chat-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transform: perspective(999px) rotateX(0deg) translateZ(0);
+  transition: 0.2s ease-in-out;
+}
+body main #history #recent-chats .chat-grid .chat-item:hover {
+  background-color: #6C20EB;
+  transform: perspective(999px) rotateX(7deg) translate3d(0, -4px, 5px);
+}
+body main #history #recent-chats .chat-grid .chat-details {
+  list-style-type: none;
+  padding: 0;
+}
+body main #history #recent-chats .chat-grid .chat-details li {
+  display: flex;
+  margin-bottom: 0.6rem;
+}
+body main #history #recent-chats .chat-grid .chat-details li span {
+  margin-left: 1rem;
+}
+body main #history #recent-chats .chat-grid .chat-details li span strong {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+  body #header-main #navigation {
+    width: calc(100vw - 2rem);
+  }
+  body main #landing .container {
+    width: calc(100vw - 2rem);
+  }
+  body main #landing .container article {
+    grid-column: span 3;
+  }
+  body main #landing .container article #quickChatForm {
+    flex-direction: column;
+  }
+  body main #landing .container article #quickChatForm input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    background-clip: padding-box;
+  }
+  body main #landing .container article small {
+    text-align: center;
+  }
+  body main #landing .container aside {
+    display: none;
+    visibility: hidden;
+  }
+  body main #history #recent-chats {
+    width: calc(100vw - 4rem);
+  }
+  body main #history #no-history {
+    width: calc(100vw - 2rem);
+  }
+  body main #history #no-history figure, body main #history #no-history #figcaption {
+    grid-column: span 2;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
